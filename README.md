@@ -1,1 +1,1 @@
-# Ejemplos-ESP32-con-Arduino-y-Platformio
+# Ejemplos para ESP32 con Arduino, Platformio y wokwi.

@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "author": "Cesar Augusto Romero Molano",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": -9.6, "left": -129.56, "attrs": {} },
+    { "type": "wokwi-hc-sr04", "id": "ultrasonic1", "top": -46.5, "left": 63.1, "attrs": {} }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "esp:5", "ultrasonic1:TRIG", "gold", [ "h0" ] ],
+    [ "esp:18", "ultrasonic1:ECHO", "green", [ "h0" ] ],
+    [ "esp:GND.2", "ultrasonic1:GND", "black", [ "v-86.4", "h278.4", "v115.2" ] ],
+    [ "esp:5V", "ultrasonic1:VCC", "red", [ "h-28.65", "v38.4", "h278.4" ] ]
+  ],
+  "dependencies": {}
+}

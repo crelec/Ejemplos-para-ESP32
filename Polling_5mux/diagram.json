@@ -1,0 +1,92 @@
+{
+  "version": 1,
+  "author": "Cesar Augusto Romero Molano",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": -19.2, "left": -158.36, "attrs": {} },
+    {
+      "type": "wokwi-7segment",
+      "id": "sevseg1",
+      "top": 82.62,
+      "left": 154.72,
+      "attrs": { "common": "anode", "digits": "4", "colon": "" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": 3.95,
+      "left": 28.8,
+      "attrs": { "value": "220" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r2",
+      "top": 13.55,
+      "left": 28.8,
+      "attrs": { "value": "220" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r3",
+      "top": 23.15,
+      "left": 28.8,
+      "attrs": { "value": "220" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r4",
+      "top": 32.75,
+      "left": 28.8,
+      "attrs": { "value": "220" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r5",
+      "top": 42.35,
+      "left": 28.8,
+      "attrs": { "value": "220" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r6",
+      "top": 51.95,
+      "left": 28.8,
+      "attrs": { "value": "220" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r7",
+      "top": 61.55,
+      "left": 28.8,
+      "attrs": { "value": "220" }
+    }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "sevseg1:A", "r1:2", "green", [ "v-76.8", "h-142.8" ] ],
+    [ "sevseg1:B", "r2:2", "green", [ "v0" ] ],
+    [ "sevseg1:C", "r3:2", "green", [ "v37.56", "h-124.8", "v-163.2" ] ],
+    [ "sevseg1:D", "r4:2", "green", [ "v19.2", "h-115.2", "v-135.24" ] ],
+    [ "sevseg1:E", "r5:2", "green", [ "v9.6", "h-115.19", "v-116.04" ] ],
+    [ "sevseg1:F", "r6:2", "green", [ "v-37.56" ] ],
+    [ "sevseg1:G", "r7:2", "green", [ "v28.8", "h-163.2", "v-116.04" ] ],
+    [ "esp:23", "r1:1", "green", [ "h9.6", "v-9.6" ] ],
+    [ "esp:22", "r2:1", "green", [ "h19.2", "v-9.6" ] ],
+    [ "esp:21", "r3:1", "green", [ "h28.8", "v-28.8" ] ],
+    [ "esp:19", "r4:1", "green", [ "h38.4", "v-38.4" ] ],
+    [ "esp:18", "r5:1", "green", [ "h48", "v-38.4" ] ],
+    [ "esp:5", "r6:1", "green", [ "h57.6", "v-38.4" ] ],
+    [ "esp:17", "r7:1", "green", [ "h67.2", "v-38.4" ] ],
+    [ "sevseg1:DIG2", "esp:26", "green", [ "v-115.2", "h-432", "v115.2" ] ],
+    [ "sevseg1:DIG3", "esp:25", "green", [ "v-124.8", "h-432", "v124.8" ] ],
+    [
+      "sevseg1:DIG1",
+      "esp:27",
+      "green",
+      [ "v-19.2", "h-86.39", "v144", "h-316.8", "v-105.6", "h9.6" ]
+    ],
+    [ "sevseg1:DIG4", "esp:33", "green", [ "v66.36", "h-460.8", "v-144" ] ]
+  ],
+  "dependencies": {}
+}

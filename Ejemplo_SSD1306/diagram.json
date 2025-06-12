@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "author": "Cesar Augusto Romero Molano",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": -9.6, "left": -62.36, "attrs": {} },
+    {
+      "type": "board-ssd1306",
+      "id": "oled1",
+      "top": 79.94,
+      "left": 125.03,
+      "attrs": { "i2cAddress": "0x3c" }
+    }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "esp:22", "oled1:SCL", "green", [ "h0" ] ],
+    [ "esp:21", "oled1:SDA", "yellow", [ "h0" ] ],
+    [ "esp:GND.2", "oled1:GND", "black", [ "v-9.6", "h96" ] ],
+    [ "esp:3V3", "oled1:VCC", "red", [ "h-19.05", "v-38.4", "h249.6" ] ]
+  ],
+  "dependencies": {}
+}

@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "author": "Cesar Augusto Romero Molano",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": -28.8, "left": -187.16, "attrs": {} },
+    {
+      "type": "board-ssd1306",
+      "id": "oled1",
+      "top": 89.54,
+      "left": -9.37,
+      "attrs": { "i2cAddress": "0x3c" }
+    },
+    {
+      "type": "wokwi-hc-sr04",
+      "id": "ultrasonic1",
+      "top": -104.1,
+      "left": -23.3,
+      "attrs": { "distance": "194" }
+    }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "esp:5V", "ultrasonic1:VCC", "red", [ "h-9.45", "v19.2", "h153.6", "v-192" ] ],
+    [ "esp:GND.2", "ultrasonic1:GND", "black", [ "v0", "h163.2" ] ],
+    [ "oled1:GND", "esp:GND.2", "black", [ "v-96" ] ],
+    [ "esp:3V3", "oled1:VCC", "red", [ "h-19.05", "v201.6", "h172.8", "v-124.8", "h67.2" ] ],
+    [ "esp:22", "oled1:SCL", "green", [ "h0" ] ],
+    [ "esp:21", "oled1:SDA", "gold", [ "h144", "v48" ] ],
+    [ "ultrasonic1:TRIG", "esp:5", "purple", [ "v19.2", "h-115.6", "v76.8" ] ],
+    [ "esp:18", "ultrasonic1:ECHO", "violet", [ "h38.4", "v-48", "h115.2" ] ]
+  ],
+  "dependencies": {}
+}

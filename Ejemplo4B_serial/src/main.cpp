@@ -6,7 +6,7 @@
 int contador=0;
 bool estadoAnterior= HIGH;
 unsigned long ultimoTiempoRebote = 0;
-const unsigned long tiempoDebounce = 50; // ms para antirrebote
+const unsigned long tiempoDebounce = 200; // ms para antirrebote
 
 void setup() {
   pinMode(D0,OUTPUT);
@@ -30,5 +30,4 @@ void loop() {
   digitalWrite(D0,LOW);
   }
   estadoAnterior=estadoActual;
-  delay(10); //OJO NO
 }

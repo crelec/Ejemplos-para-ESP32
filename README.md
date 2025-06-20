@@ -20,8 +20,12 @@
 
 
 ## Ejemplos usando tareas periódicas.
-* **Ejemplo HC05**: Medición de distancia usando tareas periódicas para el HC05 y el puerto serial. [Ver -> GitHub](https://github.com/crelec/Ejemplos-para-ESP32/tree/main/Ejemplo_HC05)
-* **Ejemplo_SSD1306**: Impresión de texto usando tareas periódicas en display SSD1306.[Ver -> GitHub](https://github.com/crelec/Ejemplos-para-ESP32/tree/main/Ejemplo_SSD1306)
-* **Ejemplo_ssd1306_hc**: Medición de distancia usando tareas periódicas para el HC05 y display SSD1306. [Ver -> GitHub](https://github.com/crelec/Ejemplos-para-ESP32/tree/main/Ejemplo_SSD1306_HC05)
-
+* **Ejemplo Dieciséis**: Leer una entrada digital usando tareas periódicas. [Ver -> GitHub](https://github.com/crelec/Ejemplos-para-ESP32/tree/main/Ejemplo_2)
+* **Ejemplo Diecisiete**:TX de datos en comunicación serial usando tareas periódicas.[Ver -> GitHub](https://github.com/crelec/Ejemplos-para-ESP32/tree/main/Ejemplo_2A)
+* **Ejemplo Dieciocho**: TX y RX de datos en comunicación serial usando tareas periódicas caso uno.[Ver -> GitHub](https://github.com/crelec/Ejemplos-para-ESP32/tree/main/Ejemplo_2B)
+* **Ejemplo Diecinueve**: TX y RX de datos en comunicación serial usando tareas periódicas caso dos.[Ver -> GitHub](https://github.com/crelec/Ejemplos-para-ESP32/tree/main/Ejemplo_2C)
+* **Ejemplo Veinte**: Medición de distancia usando tareas periódicas para el HC05 y el puerto serial. [Ver -> GitHub](https://github.com/crelec/Ejemplos-para-ESP32/tree/main/Ejemplo_HC05)
+* **Ejemplo Veintiún**: Impresión de texto usando tareas periódicas en display SSD1306.[Ver -> GitHub](https://github.com/crelec/Ejemplos-para-ESP32/tree/main/Ejemplo_SSD1306)
+* **Ejemplo Veintidós**: Medición de distancia usando tareas periódicas para el HC05 y display SSD1306. [Ver -> GitHub](https://github.com/crelec/Ejemplos-para-ESP32/tree/main/Ejemplo_SSD1306_HC05)
+  
 ## Ejemplos de perifericos y Sensores usados en IoT.

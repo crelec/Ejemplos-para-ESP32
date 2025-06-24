@@ -29,3 +29,4 @@
 * **Ejemplo Veintidós**: Medición de distancia usando tareas periódicas para el HC05 y display SSD1306. [Ver -> GitHub](https://github.com/crelec/Ejemplos-para-ESP32/tree/main/Ejemplo_SSD1306_HC05)
   
 ## Ejemplos de perifericos y Sensores usados en IoT.
+* **Ejemplo Veintitrés**: Medición de aceleración, rotación y temperatura con MPU6050 y puerto serial. [Ver -> GitHub](https://github.com/crelec/Ejemplos-para-ESP32/tree/main/Ejemplo_Basempu6050)

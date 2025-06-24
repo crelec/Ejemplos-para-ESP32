@@ -30,3 +30,4 @@
   
 ## Ejemplos de perifericos y Sensores usados en IoT.
 * **Ejemplo Veintitrés**: Medición de aceleración, rotación y temperatura con MPU6050 y puerto serial. [Ver -> GitHub](https://github.com/crelec/Ejemplos-para-ESP32/tree/main/Ejemplo_Basempu6050)
+* **Ejemplo Veinticuatro**: Medición de aceleración con MPU6050 y publicación en adafruit. [Ver -> GitHub](https://github.com/crelec/Ejemplos-para-ESP32/tree/main/Ejemplo_Adafruit_mpu6050)

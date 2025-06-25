@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "author": "Cesar Augusto Romero Molano",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": 316.8, "left": 72.04, "attrs": {} },
+    {
+      "type": "wokwi-dht22",
+      "id": "dht1",
+      "top": 163.5,
+      "left": 196.2,
+      "attrs": { "temperature": "50.6", "humidity": "36.5" }
+    },
+    {
+      "type": "board-ssd1306",
+      "id": "oled1",
+      "top": 435.14,
+      "left": 259.43,
+      "attrs": { "i2cAddress": "0x3c" }
+    }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "esp:23", "dht1:SDA", "cyan", [ "h0" ] ],
+    [ "esp:GND.2", "oled1:GND", "black", [ "h67.2", "v76.8", "h57.6" ] ],
+    [ "esp:5V", "oled1:VCC", "red", [ "h-19.05", "v19.2", "h192", "v-105.6", "h57.6" ] ],
+    [ "esp:22", "oled1:SCL", "green", [ "h0" ] ],
+    [ "esp:21", "oled1:SDA", "gold", [ "h0" ] ],
+    [ "esp:GND.2", "dht1:GND", "black", [ "v0", "h67.2" ] ],
+    [ "esp:3V3", "dht1:VCC", "red", [ "h-9.45", "v-57.6", "h144" ] ]
+  ],
+  "dependencies": {}
+}
